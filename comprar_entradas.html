@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>MUNDIAL DE SUDÁFRICA 2010</title>
+</head>
+<body bgcolor="#BAE2AA">
+	<table width="90%">
+		<tr>
+			<td>
+				<img src="./img/logo.png" width="150">
+			</td>
+			<td align="center">
+				<h1>MUNDIAL DE SUDÁFRICA 2010</h1>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<a href="index.html"><u>VER CLASIFICACIÓN GENERAL</u></a>
+			</td>
+		</tr>
+	</table>
+	<h1>Compra de entradas</h1>
+	<form action="recibido.html" method="post">
+		<fieldset>
+		<legend>Información del evento</legend>
+			<table width="100%">
+				<tr>
+					<td>
+						<p><b>Categoría:</b><br>
+						Deportes</p>
+						<p><b>Duración:</b><br>
+						120'</p>
+					</td>
+					<td>
+						<p><b>Lugar:</b><br>
+						Johannesburgo</p>
+						<p><b>Horario:</b><br>
+						Variable</p>
+					</td>
+					<td>
+						<p><b>Edad recomendada:</b><br>
+						Todos los públicos</p>
+						<p><b>Grupos:</b><br>
+						Condiciones especiales</p>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset>
+		<legend>Comprar entradas</legend>
+		
+			<table width="100%">
+				<tr>
+					<td>
+						<label for="partido">Partido:</label><br>
+						<select id="partido">
+							<option value="urgh">Uruguay - Ghana</option>
+							<option value="paibr">Países Bajos - Brasil</option>
+							<option value="alar">Alemania - Argentina</option>
+							<option value="pares">Paraguay - España</option>
+						</select>
+					</td>
+					<td width="75%">
+						<label for="tipo">Tipo entrada:</label><br>
+						<input type="radio" id="general" name="general" value="general" checked="checked">
+						<label for="general">General</label>
+						<input type="radio" id="Especial" name="Especial" value="Especial">
+						<label for="Especial">Especial</label>
+						<input type="radio" id="Palco" name="Palco" value="Palco">
+						<label for="Palco">Palco</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="numero">Número de entradas (*):</label>
+						<input type="number" id="nent" name="nent" required="required" min="1" max="10" value="1">
+					</td>
+					<td>
+						<label for="fecha">Fecha (*):</label><br>
+						<input type="date" id="date" name="date" required="required">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="pago">Método de pago:</label><br>
+						<input type="radio" id="card" name="card" checked="checked">
+						<label for="card"><img src="./img/credit-card.png" width="40"></label>
+						<input type="radio" id="pp" name="pp">
+						<label for="pp"><img src="./img/paypal.png" width="40"></label>
+					</td>
+					
+				</tr>
+			</table>
+		</fieldset>	
+		<fieldset>
+		<legend>Datos de contacto</legend>
+			<table width="100%">
+					<tr>
+						<td>
+							<label for="nombre">Nombre y apellidos (*):</label><br>
+							<input type="text" id="nombre" name="nombre" required="required" size="50" minlength="3" maxlength="50">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="correo">Correo electrónico (*):</label><br>
+							<input type="email" id="email" name="email" required="required" size="50" minlength="3" maxlength="50">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="numero">Teléfono (*):</label><br>
+							<input type="tel" id="tel" name="tel" placeholder="123456789" required="required">
+						</td>
+					</tr>
+			</table>
+		</fieldset>
+		<fieldset>
+			<input type="checkbox" id="politica" name="politica" required="required">
+			<label for="politica">Acepto la <a href="politica.html" target="_blank"><i><u>política de privacidad</u></i></a></label><br>
+			<input type="checkbox" id="novedades" name="novedades">
+			<label for="novedades">Quiero recibir novedades y noticias</label><br>
+			<input type="color" id="verde">
+			<label for="verde">Selecciona el color verde para demostrar que no eres un robot</label><br>
+			<input type="submit" id="aceptar" value="Enviar">
+			<input type="reset" id="borrar" value="Borrar datos">
+		</fieldset>
+	</form>
+	<h3>Todos los campos marcados con (*) son obligatorios</h3>
+	<h2>Nuestras sedes:</h2>
+		<ul>
+			<li><a href="https://es.wikipedia.org/wiki/Estadio_Nelson_Mandela_Bay">Estadio Nelson Mandela Bay.</a></li>
+			<li><a href="https://es.wikipedia.org/wiki/Estadio_de_Ciudad_del_Cabo">Estadio Green Point.</a></li>
+			<li><a href="https://es.wikipedia.org/wiki/Estadio_Soccer_City">Estadio Soccer City.</a></li>
+		</ul>
+</body>
+</html>
